@@ -1,0 +1,4 @@
+repository "Game@UTS_3D_Animation@cloud"
+  path "/"
+    br "/main"
+    co "/main"
