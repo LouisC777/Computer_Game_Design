@@ -1,43 +1,59 @@
 using UnityEngine;
+using TMPro;  // Make sure you're using TextMeshPro
 
 public class Cluetrigger : MonoBehaviour
 {
-    public GameObject infoBox;  // 信息框UI元素
-    private bool isNear = false;  // 是否靠近物体
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject infoBox;              // The UI panel to show
+    public TextMeshProUGUI infoText;        // The text inside the panel
+    public string clueMessage = "This is a clue."; // Editable message in inspector
+    public GameObject eHint;                // Optional: hint like "Press E"
+
+    private bool isNear = false;
+
     void Start()
     {
-        
+        if (infoBox != null) infoBox.SetActive(false);
+        if (eHint != null) eHint.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // 检查玩家是否靠近并按下E键
         if (isNear && Input.GetKeyDown(KeyCode.E))
         {
             ToggleInfoBox();
         }
-        
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))  // 假设玩家的Tag是Player
+        if (other.CompareTag("Player"))
         {
             isNear = true;
-            // 你可以在这里提示玩家按E键
+            if (eHint != null) eHint.SetActive(true);
         }
     }
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isNear = false;
-            // 你可以在这里隐藏提示玩家按E键
+            if (eHint != null) eHint.SetActive(false);
+            if (infoBox != null) infoBox.SetActive(false);
         }
     }
+
     void ToggleInfoBox()
     {
-        infoBox.SetActive(!infoBox.activeSelf);
+        if (infoBox != null)
+        {
+            bool isActive = infoBox.activeSelf;
+            infoBox.SetActive(!isActive);
+
+            if (!isActive && infoText != null)
+            {
+                infoText.text = clueMessage;
+            }
+        }
     }
 }
