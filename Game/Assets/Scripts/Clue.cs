@@ -10,7 +10,7 @@ public class Clue : MonoBehaviour
         {
             Debug.Log("Clue Found: " + clueText);
             // Trigger clue display (UI popup, log, etc.)
-            TutorialPuzzleManager.Instance.FoundClue();
+            //TutorialPuzzleManager.Instance.FoundClue();
             Destroy(gameObject); // Remove clue after it's found
         }
     }
