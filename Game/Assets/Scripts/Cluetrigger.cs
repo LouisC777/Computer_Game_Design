@@ -6,14 +6,24 @@ public class Cluetrigger : MonoBehaviour
     public GameObject infoBox;              // The UI panel to show
     public TextMeshProUGUI infoText;        // The text inside the panel
     public string clueMessage = "This is a clue."; // Editable message in inspector
-    public GameObject eHint;                // Optional: hint like "Press E"
+    public GameObject eHint1;                // Optional: hint like "Press E"
 
     private bool isNear = false;
 
     void Start()
     {
         if (infoBox != null) infoBox.SetActive(false);
-        if (eHint != null) eHint.SetActive(false);
+        if (eHint1 != null) eHint1.SetActive(false);
+      
+            if (eHint1 == null)
+            {
+                Debug.LogWarning("eHint is not assigned.");
+            }
+            else
+            {
+                Debug.Log("eHint is assigned.");
+            
+        }
     }
 
     void Update()
@@ -22,6 +32,7 @@ public class Cluetrigger : MonoBehaviour
         {
             ToggleInfoBox();
         }
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -29,7 +40,8 @@ public class Cluetrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isNear = true;
-            if (eHint != null) eHint.SetActive(true);
+            
+            if (eHint1 != null) eHint1.SetActive(true);
         }
     }
 
@@ -38,13 +50,14 @@ public class Cluetrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isNear = false;
-            if (eHint != null) eHint.SetActive(false);
+            if (eHint1 != null) eHint1.SetActive(false);
             if (infoBox != null) infoBox.SetActive(false);
         }
     }
 
     void ToggleInfoBox()
     {
+        
         if (infoBox != null)
         {
             bool isActive = infoBox.activeSelf;
