@@ -14,16 +14,8 @@ public class Cluetrigger : MonoBehaviour
     {
         if (infoBox != null) infoBox.SetActive(false);
         if (eHint1 != null) eHint1.SetActive(false);
-      
-            if (eHint1 == null)
-            {
-                Debug.LogWarning("eHint is not assigned.");
-            }
-            else
-            {
-                Debug.Log("eHint is assigned.");
-            
-        }
+
+        Debug.Log(eHint1 != null ? "eHint已赋值" : "警告：eHint未赋值");
     }
 
     void Update()
@@ -60,6 +52,7 @@ public class Cluetrigger : MonoBehaviour
         
         if (infoBox != null)
         {
+            if (eHint1 != null) eHint1.SetActive(false);
             bool isActive = infoBox.activeSelf;
             infoBox.SetActive(!isActive);
 
