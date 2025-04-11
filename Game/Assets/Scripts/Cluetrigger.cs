@@ -3,8 +3,8 @@ using TMPro;  // Make sure you're using TextMeshPro
 
 public class Cluetrigger : MonoBehaviour
 {
-    public GameObject infoBox;              // The UI panel to show
-    public TextMeshProUGUI infoText;        // The text inside the panel
+    public GameObject infoBox1;              // The UI panel to show
+    public TextMeshProUGUI infoText1;        // The text inside the panel
     public string clueMessage = "This is a clue."; // Editable message in inspector
     public GameObject eHint1;                // Optional: hint like "Press E"
 
@@ -12,10 +12,10 @@ public class Cluetrigger : MonoBehaviour
 
     void Start()
     {
-        if (infoBox != null) infoBox.SetActive(false);
+        if (infoBox1 != null) infoBox1.SetActive(false);
         if (eHint1 != null) eHint1.SetActive(false);
 
-        Debug.Log(eHint1 != null ? "eHintÒÑ¸³Öµ" : "¾¯¸æ£ºeHintÎ´¸³Öµ");
+        Debug.Log(eHint1 != null ? "eHintï¿½Ñ¸ï¿½Öµ" : "ï¿½ï¿½ï¿½æ£ºeHintÎ´ï¿½ï¿½Öµ");
     }
 
     void Update()
@@ -43,22 +43,22 @@ public class Cluetrigger : MonoBehaviour
         {
             isNear = false;
             if (eHint1 != null) eHint1.SetActive(false);
-            if (infoBox != null) infoBox.SetActive(false);
+            if (infoBox1 != null) infoBox1.SetActive(false);
         }
     }
 
     void ToggleInfoBox()
     {
         
-        if (infoBox != null)
+        if (infoBox1 != null)
         {
             if (eHint1 != null) eHint1.SetActive(false);
-            bool isActive = infoBox.activeSelf;
-            infoBox.SetActive(!isActive);
+            bool isActive = infoBox1.activeSelf;
+            infoBox1.SetActive(!isActive);
 
-            if (!isActive && infoText != null)
+            if (!isActive && infoText1 != null)
             {
-                infoText.text = clueMessage;
+                infoText1.text = clueMessage;
             }
         }
     }
