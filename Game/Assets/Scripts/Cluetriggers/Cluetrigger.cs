@@ -1,12 +1,12 @@
 using UnityEngine;
-using TMPro;  // Make sure you're using TextMeshPro
+using TMPro;  
 
 public class Cluetrigger : MonoBehaviour
 {
     public GameObject infoBox1;              // The UI panel to show
     public TextMeshProUGUI infoText1;        // The text inside the panel
     public string clueMessage = "This is a clue."; // Editable message in inspector
-    public GameObject eHint1;                // Optional: hint like "Press E"
+    public GameObject eHint1;               
 
     private bool isNear = false;
 
