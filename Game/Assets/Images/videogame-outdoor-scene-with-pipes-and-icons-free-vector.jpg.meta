@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bd22ddf0ac00a47fe8b0a94bf605129c
+guid: 1207a8a63b1a17340bd76e923513ff48
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8806662371040212512
-    second: hint-ALL AROUND THE WORLD_0
+      213: 4574163654643183113
+    second: videogame-outdoor-scene-with-pipes-and-icons-free-vector_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hint-ALL AROUND THE WORLD_0
+      name: videogame-outdoor-scene-with-pipes-and-icons-free-vector_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 400
+        width: 6035
+        height: 4751
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 026b6aa44cc873a70800000000000000
-      internalID: 8806662371040212512
+      spriteID: 90e6283eb91ba7f30800000000000000
+      internalID: 4574163654643183113
       vertices: []
       indices: 
       edges: []
@@ -173,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      hint-ALL AROUND THE WORLD_0: 8806662371040212512
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
