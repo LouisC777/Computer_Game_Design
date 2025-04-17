@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1207a8a63b1a17340bd76e923513ff48
+guid: 6f35468650f4e514182e91da5d9fc3e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4574163654643183113
-    second: videogame-outdoor-scene-with-pipes-and-icons-free-vector_0
+      213: -6470460504253458178
+    second: 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: videogame-outdoor-scene-with-pipes-and-icons-free-vector_0
+      name: 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 6035
-        height: 4751
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90e6283eb91ba7f30800000000000000
-      internalID: 4574163654643183113
+      spriteID: ef817ce047e4436a0800000000000000
+      internalID: -6470460504253458178
       vertices: []
       indices: 
       edges: []
