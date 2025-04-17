@@ -417,7 +417,7 @@ Transform:
   m_GameObject: {fileID: 112767068}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.46, y: 7.63, z: 0}
+  m_LocalPosition: {x: -6.72, y: -1.19, z: 0}
   m_LocalScale: {x: 0.4125, y: 0.228125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -658,7 +658,7 @@ Transform:
   m_GameObject: {fileID: 297909128}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.81, y: -0.48, z: 0}
+  m_LocalPosition: {x: -3.51, y: -0.96, z: 0}
   m_LocalScale: {x: 0.39791405, y: 0.2581328, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1676,8 +1676,8 @@ Tilemap:
   - first: {x: 4, y: 8, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1949,20 +1949,22 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 24d40acf33e264849b3d9ae08bf4ebc9, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: cae446846b73c55459e8c9ee010cbab9, type: 2}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: 8f375ae52679aa343909a5fa50ece8b4, type: 2}
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 99248927a091e6e41b6cd66ea4e25cdd, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 9da79ba46cba81a4399db08163d26fc4, type: 2}
+    m_Data: {fileID: 11400000, guid: 45cf7779a9b606b4fb382ae5d72564d0, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 1b43373e5e894e545970898d53e0c88e, type: 2}
+    m_Data: {fileID: 11400000, guid: 60be8a5fbd57b9c429468048f150cf47, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 8dfd2e8cbee73ce4ba472bb4148286cc, type: 2}
   - m_RefCount: 19
     m_Data: {fileID: 11400000, guid: cff2e49e71fdc084d921d32b860ff632, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 95c63dca449e74d4d856ace30a39af13, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 9da79ba46cba81a4399db08163d26fc4, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -840941597, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
@@ -1978,20 +1980,22 @@ Tilemap:
     m_Data: {fileID: 1504009182, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1913420912, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 2047706325, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 930487735, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 461871760, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
+    m_Data: {fileID: -1798051569, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1603741669, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
+    m_Data: {fileID: -1050714990, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 870883045, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 19
     m_Data: {fileID: -562419869, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 553808554, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 461871760, guid: d0bcdbb64fa059a488bc2b2337e7327c, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 83
     m_Data:
@@ -4608,10 +4612,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475f4837af487ce4a9e68bb227455e4c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 475f4837af487ce4a9e68bb227455e4c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.313
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4821,7 +4825,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 1
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
