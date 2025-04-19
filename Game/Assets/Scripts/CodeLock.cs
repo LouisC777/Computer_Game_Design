@@ -1,33 +1,72 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CodeLock : MonoBehaviour
 {
-    public GameObject door; // Door GameObject to disable
-    public GameObject codePanelUI; // The panel with input field and button
-    public TMP_InputField codeInput;
-    public string correctCode = "1234"; // You can change this
+    public GameObject door;               // The locked door GameObject
+    public GameObject codePanelUI;        // The UI panel with input field
+    public TMP_InputField codeInput;      // TMP Input Field for code entry
+    public string correctCode = "1234";   // Change this to your actual code
+    public string nextSceneName;          // The name of the next scene
 
-    public string nextSceneName; // The name of the next level scene
+    public GameObject interactPrompt;     // "Press E to interact" UI
+    private bool playerInRange = false;   // Is the player near the door?
+
+    void Start()
+    {
+        codePanelUI.SetActive(false);     // Hide code panel at start
+        interactPrompt.SetActive(false);  // Hide interaction prompt at start
+    }
+
+    void Update()
+    {
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        {
+            codePanelUI.SetActive(true);
+            interactPrompt.SetActive(false);
+            Time.timeScale = 0f; // Pause the game (optional)
+        }
+    }
 
     public void SubmitCode()
     {
         if (codeInput.text == correctCode)
         {
             Debug.Log("Correct Code!");
-            door.SetActive(false); // Unlock door (you could also play animation/sound)
-            codePanelUI.SetActive(false);
-            LoadNextLevel(); // Or you can use a trigger
+            door.SetActive(false);         // "Unlock" the door
+            codePanelUI.SetActive(false);  // Hide the UI
+            Time.timeScale = 1f;           // Resume game
+            SceneManager.LoadScene(nextSceneName); // Load next level
         }
         else
         {
             Debug.Log("Wrong Code!");
-            codeInput.text = "";
+            codeInput.text = ""; // Clear input
         }
     }
 
-    void LoadNextLevel()
+    public void ClosePanel()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
+        codePanelUI.SetActive(false); // Hide the code panel
+        Time.timeScale = 1f;          // Resume game if paused
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+            interactPrompt.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+            interactPrompt.SetActive(false);
+        }
     }
 }
