@@ -1285,8 +1285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efd6f206630f504188af173cb948e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clueIndex: 2
   clueSprites: []
   clueViewer: {fileID: 0}
+  clueManager: {fileID: 0}
   cluePrompt: {fileID: 697842499}
 --- !u!1 &411309120
 GameObject:
@@ -4197,10 +4199,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efd6f206630f504188af173cb948e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clueIndex: 1
   clueSprites:
   - {fileID: -855298285791758126, guid: 474ad6ac4577f85458675d44fd36af91, type: 3}
   - {fileID: 6937817954938267909, guid: 2ee30daabd3198f4e9f6ecf97a95e764, type: 3}
   clueViewer: {fileID: 1017096748}
+  clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 759773780}
 --- !u!61 &870567314
 BoxCollider2D:
@@ -4248,6 +4252,51 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.94, y: 1.88}
   m_EdgeRadius: 0
+--- !u!1 &915793796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 915793798}
+  - component: {fileID: 915793797}
+  m_Layer: 0
+  m_Name: Clue Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &915793797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915793796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab30bb57f12a3cf4189f9be55b88c4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentClue: 0
+--- !u!4 &915793798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915793796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.243169, y: 3.9286568, z: 2.0428863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920845284
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,8 +7467,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449465371}
-  - component: {fileID: 1449465373}
   - component: {fileID: 1449465372}
+  - component: {fileID: 1449465373}
   m_Layer: 0
   m_Name: Clue 3
   m_TagString: Untagged
@@ -7500,8 +7549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efd6f206630f504188af173cb948e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clueIndex: 3
   clueSprites: []
   clueViewer: {fileID: 0}
+  clueManager: {fileID: 0}
   cluePrompt: {fileID: 444191025}
 --- !u!1 &1547079094
 GameObject:
@@ -9074,8 +9125,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1716424497}
-  - component: {fileID: 1716424499}
   - component: {fileID: 1716424498}
+  - component: {fileID: 1716424499}
   m_Layer: 0
   m_Name: Clue 4
   m_TagString: Untagged
@@ -9156,8 +9207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efd6f206630f504188af173cb948e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clueIndex: 4
   clueSprites: []
   clueViewer: {fileID: 0}
+  clueManager: {fileID: 0}
   cluePrompt: {fileID: 0}
 --- !u!1 &1750713502
 GameObject:
@@ -9840,8 +9893,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efd6f206630f504188af173cb948e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueSprites: []
-  clueViewer: {fileID: 0}
+  clueIndex: 0
+  clueSprites:
+  - {fileID: -4178046375966092550, guid: cd04db561cd6d1b48b44a79287c2d39c, type: 3}
+  - {fileID: -6470460504253458178, guid: 6f35468650f4e514182e91da5d9fc3e0, type: 3}
+  clueViewer: {fileID: 1017096748}
+  clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 369928436}
 --- !u!61 &1902906512
 BoxCollider2D:
@@ -11343,6 +11400,7 @@ SceneRoots:
   - {fileID: 1284692946}
   - {fileID: 1547079099}
   - {fileID: 1017096749}
+  - {fileID: 915793798}
   - {fileID: 681594871}
   - {fileID: 844952155}
   - {fileID: 2125382378}

@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class ClueTrigger : MonoBehaviour
 {
-    public Sprite[] clueSprites;                  // Images for this specific clue
-    public ClueImageViewer clueViewer;            // Reference to viewer
-    public GameObject cluePrompt;                 // "Press E to view" prompt
+    public int clueIndex;                         // 0 = Clue 1, 1 = Clue 2, etc.
+    public Sprite[] clueSprites;                  // Images for this clue
+    public ClueImageViewer clueViewer;            // Reference to the clue image system
+    public ClueManager clueManager;               // Reference to the clue progression system
+    public GameObject cluePrompt;                 // UI "Press E" prompt
 
     private bool playerInZone = false;
 
@@ -17,8 +19,17 @@ public class ClueTrigger : MonoBehaviour
     {
         if (playerInZone && Input.GetKeyDown(KeyCode.E))
         {
-            clueViewer.ShowClue(clueSprites);     // Load this clue’s images
-            cluePrompt.SetActive(false);
+            if (clueManager.CanAccessClue(clueIndex))
+            {
+                clueViewer.ShowClue(clueSprites);
+                clueManager.AdvanceClue();
+                cluePrompt.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("You need to find the previous clue first.");
+                // Optionally show a locked clue message here
+            }
         }
     }
 
@@ -27,7 +38,16 @@ public class ClueTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInZone = true;
-            cluePrompt.SetActive(true);
+
+            // Only show prompt if this clue is currently accessible
+            if (clueManager.CanAccessClue(clueIndex))
+            {
+                cluePrompt.SetActive(true);
+            }
+            else
+            {
+                cluePrompt.SetActive(false);
+            }
         }
     }
 
