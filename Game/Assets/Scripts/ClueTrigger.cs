@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class ClueTrigger : MonoBehaviour
 {
-    public int clueIndex;                         // 0 = Clue 1, 1 = Clue 2, etc.
-    public Sprite[] clueSprites;                  // Images for this clue
-    public ClueImageViewer clueViewer;            // Reference to the clue image system
-    public ClueManager clueManager;               // Reference to the clue progression system
-    public GameObject cluePrompt;                 // UI "Press E" prompt
+    public int clueIndex;
+    public Sprite[] clueSprites;
+    public ClueImageViewer clueViewer;
+    public ClueManager clueManager;
+    public GameObject cluePrompt;
 
     private bool playerInZone = false;
 
@@ -22,13 +22,12 @@ public class ClueTrigger : MonoBehaviour
             if (clueManager.CanAccessClue(clueIndex))
             {
                 clueViewer.ShowClue(clueSprites);
-                clueManager.AdvanceClue();
+                clueManager.UnlockClue(clueIndex); // Unlock if it wasn’t before
                 cluePrompt.SetActive(false);
             }
             else
             {
                 Debug.Log("You need to find the previous clue first.");
-                // Optionally show a locked clue message here
             }
         }
     }
@@ -39,7 +38,6 @@ public class ClueTrigger : MonoBehaviour
         {
             playerInZone = true;
 
-            // Only show prompt if this clue is currently accessible
             if (clueManager.CanAccessClue(clueIndex))
             {
                 cluePrompt.SetActive(true);

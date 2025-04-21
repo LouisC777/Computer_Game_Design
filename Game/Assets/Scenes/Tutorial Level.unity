@@ -3578,7 +3578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &844952155
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab30bb57f12a3cf4189f9be55b88c4ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentClue: 0
+  totalClues: 5
 --- !u!4 &915793798
 Transform:
   m_ObjectHideFlags: 0
@@ -8144,8 +8144,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueIndex: 0
   clueSprites:
-  - {fileID: -4178046375966092550, guid: cd04db561cd6d1b48b44a79287c2d39c, type: 3}
-  - {fileID: -6470460504253458178, guid: 6f35468650f4e514182e91da5d9fc3e0, type: 3}
+  - {fileID: 4113829005332862926, guid: ffea9727f35a9ad45951cd69cab4f5a1, type: 3}
+  - {fileID: -5099292496197868168, guid: 4692a251cd19c054e81ea9f89727d821, type: 3}
+  - {fileID: -2966200626249415253, guid: 4135c934e4790a44489125b06b16a2de, type: 3}
   clueViewer: {fileID: 1017096748}
   clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 369928436}
