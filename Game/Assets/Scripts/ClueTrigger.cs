@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ClueTrigger : MonoBehaviour
 {
-    public int clueIndex;
+    public int clueIndex;                         // 0 = Clue 1, 1 = Clue 2, etc.
     public Sprite[] clueSprites;
     public ClueImageViewer clueViewer;
     public ClueManager clueManager;
@@ -22,7 +22,7 @@ public class ClueTrigger : MonoBehaviour
             if (clueManager.CanAccessClue(clueIndex))
             {
                 clueViewer.ShowClue(clueSprites);
-                clueManager.UnlockClue(clueIndex); // Unlock if it wasn’t before
+                clueManager.UnlockClue(clueIndex);
                 cluePrompt.SetActive(false);
             }
             else

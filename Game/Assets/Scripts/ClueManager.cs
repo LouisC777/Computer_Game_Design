@@ -1,15 +1,14 @@
 using UnityEngine;
-using UnityEngine;
 
 public class ClueManager : MonoBehaviour
 {
-    public int totalClues = 4;
+    public int totalClues = 5;
     private bool[] unlockedClues;
 
     void Awake()
     {
         unlockedClues = new bool[totalClues];
-        unlockedClues[0] = true; // Clue 0 (first clue) is unlocked by default
+        unlockedClues[0] = false; // NONE are unlocked by default
     }
 
     public bool IsClueUnlocked(int clueIndex)
@@ -20,10 +19,14 @@ public class ClueManager : MonoBehaviour
         return unlockedClues[clueIndex];
     }
 
+    public bool IsClueNextToUnlock(int clueIndex)
+    {
+        return clueIndex == GetNextUnlockableClue();
+    }
+
     public bool CanAccessClue(int clueIndex)
     {
-        // A clue can be accessed if it's already unlocked or it's the next one to unlock
-        return IsClueUnlocked(clueIndex) || clueIndex == GetNextUnlockableClue();
+        return IsClueUnlocked(clueIndex) || IsClueNextToUnlock(clueIndex);
     }
 
     public void UnlockClue(int clueIndex)
