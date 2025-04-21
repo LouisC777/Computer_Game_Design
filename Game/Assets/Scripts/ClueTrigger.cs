@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class ClueTrigger : MonoBehaviour
 {
-    public GameObject clueImage;   // This is now the Image instead of a panel
-    public GameObject cluePrompt;
+    public Sprite[] clueSprites;                  // Images for this specific clue
+    public ClueImageViewer clueViewer;            // Reference to viewer
+    public GameObject cluePrompt;                 // "Press E to view" prompt
 
     private bool playerInZone = false;
 
     void Start()
     {
-        clueImage.SetActive(false);
         cluePrompt.SetActive(false);
     }
 
@@ -17,16 +17,9 @@ public class ClueTrigger : MonoBehaviour
     {
         if (playerInZone && Input.GetKeyDown(KeyCode.E))
         {
-            clueImage.SetActive(true);
+            clueViewer.ShowClue(clueSprites);     // Load this clue’s images
             cluePrompt.SetActive(false);
-            Time.timeScale = 0f; // Pause the game
         }
-    }
-
-    public void CloseClue()
-    {
-        clueImage.SetActive(false);
-        Time.timeScale = 1f; // Resume the game
     }
 
     private void OnTriggerEnter2D(Collider2D other)
