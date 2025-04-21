@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class ClueTrigger : MonoBehaviour
 {
-    public GameObject cluePanel;
+    public GameObject clueImage;   // This is now the Image instead of a panel
     public GameObject cluePrompt;
 
     private bool playerInZone = false;
 
     void Start()
     {
-        cluePanel.SetActive(false);
+        clueImage.SetActive(false);
         cluePrompt.SetActive(false);
     }
 
@@ -17,16 +17,16 @@ public class ClueTrigger : MonoBehaviour
     {
         if (playerInZone && Input.GetKeyDown(KeyCode.E))
         {
-            cluePanel.SetActive(true);
+            clueImage.SetActive(true);
             cluePrompt.SetActive(false);
-            Time.timeScale = 0f; // Pause the game (optional)
+            Time.timeScale = 0f; // Pause the game
         }
     }
 
     public void CloseClue()
     {
-        cluePanel.SetActive(false);
-        Time.timeScale = 1f; // Resume game
+        clueImage.SetActive(false);
+        Time.timeScale = 1f; // Resume the game
     }
 
     private void OnTriggerEnter2D(Collider2D other)
