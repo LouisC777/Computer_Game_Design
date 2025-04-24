@@ -24,6 +24,9 @@ public class DrumPuzzleManager : MonoBehaviour
     public GameObject puzzlePanel;
     public GameObject failText;
 
+    public GameObject nextPanel;
+    public AudioSource mysteryAudio;
+
     void Start()
     {
         // 点击播放节奏按钮
@@ -100,5 +103,11 @@ public class DrumPuzzleManager : MonoBehaviour
     {
         if (successPanel) successPanel.SetActive(false);
         Time.timeScale = 1f; // ✅ 恢复游戏时间
+    }
+    public void OnNextPanelClose()
+    {
+        nextPanel.SetActive(false);
+        if (mysteryAudio && !mysteryAudio.isPlaying)
+            mysteryAudio.Play();
     }
 }

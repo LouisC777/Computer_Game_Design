@@ -42,10 +42,10 @@ public class ClueTrigger : MonoBehaviour
             {
                 cluePrompt.SetActive(true);
             }
-            else
-            {
-                cluePrompt.SetActive(false);
-            }
+            //else
+            //{
+            //    cluePrompt.SetActive(false);
+            //}
         }
     }
 
