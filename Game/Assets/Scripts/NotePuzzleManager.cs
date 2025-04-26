@@ -52,12 +52,12 @@ public class NotePuzzleManager : MonoBehaviour
 
         if (isCorrect)
         {
-            feedbackText.text = "🎉 Correct sequence!";
+            feedbackText.text = " Correct sequence!";
             successPanel.SetActive(true);
         }
         else
         {
-            feedbackText.text = "❌ Wrong sequence. Try again.";
+            feedbackText.text = " Wrong sequence. Try again.";
         }
 
         inputSequence.Clear(); // 重置输入

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 90fa6a6f81c934e49952c472da1a2ca6
+guid: 4d8486a151e350d4c9e72a328b96fbff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2508030856241002104
-    second: "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.37.49_0"
+      213: 9094591960421478823
+    second: Level 4 (17)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.37.49_0"
+      name: Level 4 (17)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 498
-        height: 284
+        width: 1400
+        height: 900
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8894900793fa13dd0800000000000000
-      internalID: -2508030856241002104
+      spriteID: 7a1bb0ae33b763e70800000000000000
+      internalID: 9094591960421478823
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.37.49_0": -2508030856241002104
+      Level 4 (17)_0: 9094591960421478823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
