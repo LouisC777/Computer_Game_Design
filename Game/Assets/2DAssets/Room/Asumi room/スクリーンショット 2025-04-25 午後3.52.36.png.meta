@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e54d8b90af891496ebba9d6b22c99cc2
+guid: 94bbbf422abaa4753b5b892e6ac5c971
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5367768727049870524
-    second: "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.30.25_0"
+      213: 4620868356379589224
+    second: "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.52.36_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,17 +122,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.30.25_0"
+      name: "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.52.36_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1218
-        height: 1168
+        width: 1332
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbc1244b7352e7a40800000000000000
-      internalID: 5367768727049870524
+      spriteID: 86a39d7a94f902040800000000000000
+      internalID: 4620868356379589224
       vertices: []
       indices: 
       edges: []
@@ -161,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.30.25_0": 5367768727049870524
+      "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8 2025-04-25 \u5348\u5F8C3.52.36_0": 4620868356379589224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

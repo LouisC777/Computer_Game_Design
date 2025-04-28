@@ -1,15 +1,15 @@
 using UnityEngine;
-using TMPro; // ←パスワードを表示するならこれが必要！（TextMeshPro用）
+using TMPro;
 
 public class ClueTrigger : MonoBehaviour
 {
-    public int clueIndex;                         // 0 = Clue 1, 1 = Clue 2, etc.
-    public Sprite[] clueSprites;
+    public int clueIndex;
+    public ClueData[] clues; // Change from Sprite[][] to ClueData[]
+
     public ClueImageViewer clueViewer;
     public ClueManager clueManager;
     public GameObject cluePrompt;
 
-    // ★ここを追加！！
     public TextMeshProUGUI passwordDisplay;
     public string passwordPiece;
 
@@ -17,24 +17,38 @@ public class ClueTrigger : MonoBehaviour
 
     void Start()
     {
-        cluePrompt.SetActive(false);
-
-        // 最初はパスワード表示を空にしておきたい場合はここに書ける
-        // passwordDisplay.text = "";
+        if (cluePrompt != null)
+        {
+            cluePrompt.SetActive(false);
+        }
     }
 
     void Update()
     {
         if (playerInZone && Input.GetKeyDown(KeyCode.E))
         {
-            if (clueManager.CanAccessClue(clueIndex))
+            if (clueManager != null && clueManager.CanAccessClue(clueIndex))
             {
-                clueViewer.ShowClue(clueSprites);
-                clueManager.UnlockClue(clueIndex);
-                cluePrompt.SetActive(false);
+                if (clues != null && clueIndex < clues.Length && clues[clueIndex] != null && clues[clueIndex].clueImages.Length > 0)
+                {
+                    clueViewer.ShowClue(clues[clueIndex].clueImages);
+                }
+                else
+                {
+                    Debug.LogWarning("ClueData or Clue images are missing for clueIndex: " + clueIndex);
+                }
 
-                // ★ここでパスワードを表示する
-                passwordDisplay.text += passwordPiece;
+                clueManager.UnlockClue(clueIndex);
+
+                if (cluePrompt != null)
+                {
+                    cluePrompt.SetActive(false);
+                }
+
+                if (passwordDisplay != null)
+                {
+                    passwordDisplay.text += passwordPiece;
+                }
             }
             else
             {
@@ -49,13 +63,19 @@ public class ClueTrigger : MonoBehaviour
         {
             playerInZone = true;
 
-            if (clueManager.CanAccessClue(clueIndex))
+            if (clueManager != null && clueManager.CanAccessClue(clueIndex))
             {
-                cluePrompt.SetActive(true);
+                if (cluePrompt != null)
+                {
+                    cluePrompt.SetActive(true);
+                }
             }
             else
             {
-                cluePrompt.SetActive(false);
+                if (cluePrompt != null)
+                {
+                    cluePrompt.SetActive(false);
+                }
             }
         }
     }
@@ -65,7 +85,11 @@ public class ClueTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInZone = false;
-            cluePrompt.SetActive(false);
+
+            if (cluePrompt != null)
+            {
+                cluePrompt.SetActive(false);
+            }
         }
     }
 }
