@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro; // ←パスワードを表示するならこれが必要！（TextMeshPro用）
 
 public class ClueTrigger : MonoBehaviour
 {
@@ -8,11 +9,18 @@ public class ClueTrigger : MonoBehaviour
     public ClueManager clueManager;
     public GameObject cluePrompt;
 
+    // ★ここを追加！！
+    public TextMeshProUGUI passwordDisplay;
+    public string passwordPiece;
+
     private bool playerInZone = false;
 
     void Start()
     {
         cluePrompt.SetActive(false);
+
+        // 最初はパスワード表示を空にしておきたい場合はここに書ける
+        // passwordDisplay.text = "";
     }
 
     void Update()
@@ -24,6 +32,9 @@ public class ClueTrigger : MonoBehaviour
                 clueViewer.ShowClue(clueSprites);
                 clueManager.UnlockClue(clueIndex);
                 cluePrompt.SetActive(false);
+
+                // ★ここでパスワードを表示する
+                passwordDisplay.text += passwordPiece;
             }
             else
             {
