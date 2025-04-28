@@ -1002,7 +1002,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueIndex: 2
-  clues: []
+  clues:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: abc15b2b36a5b0a47b07a94120401951, type: 2}
   clueViewer: {fileID: 1017096748}
   clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 697842499}
@@ -3711,7 +3714,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueIndex: 1
-  clues: []
+  clues:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 71ec1cf03f49e21458191dc75df2445e, type: 2}
   clueViewer: {fileID: 1017096748}
   clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 759773780}
@@ -6374,7 +6379,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueIndex: 3
-  clues: []
+  clues:
+  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
+  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
+  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
+  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
   clueViewer: {fileID: 1017096748}
   clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 444191025}
@@ -7749,7 +7758,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueIndex: 4
-  clues: []
+  clues:
+  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
+  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
+  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
+  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
+  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
   clueViewer: {fileID: 1017096748}
   clueManager: {fileID: 915793797}
   cluePrompt: {fileID: 741242021}
@@ -8712,11 +8726,11 @@ Transform:
   - {fileID: 1893817574}
   - {fileID: 2137079995}
   - {fileID: 1902906510}
-  - {fileID: 1852763060}
   - {fileID: 870567312}
   - {fileID: 384268690}
   - {fileID: 1449465371}
   - {fileID: 1716424497}
+  - {fileID: 1852763060}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2127341412

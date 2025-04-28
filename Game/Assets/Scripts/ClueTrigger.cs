@@ -4,7 +4,7 @@ using TMPro;
 public class ClueTrigger : MonoBehaviour
 {
     public int clueIndex;
-    public ClueData[] clues; // Change from Sprite[][] to ClueData[]
+    public ClueData[] clues; // Array of ClueData assets
 
     public ClueImageViewer clueViewer;
     public ClueManager clueManager;
