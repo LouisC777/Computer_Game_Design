@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial Level.unity
     guid: 897f2d32aea21dd4dac2ac1bd1d9d746
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Level 1 (Ziyan).unity
     guid: 8824ed07422f5dc4a93188b0ff97e29a
   - enabled: 0
-    path: Assets/Scenes/Level 4 Astronaut.unity
+    path: Assets/Scenes/Level 4 (Yonghui).unity
     guid: 076ee15ef448b164f94620f164f35721
   - enabled: 0
     path: Assets/Scenes/Main Menu.unity
