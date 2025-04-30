@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af6f83242aef8284fab4bfa074f59f75, type: 3}
-  m_Name: Level 1 Clue_0
+  m_Name: Level 1 Clue_1
   m_EditorClassIdentifier: 
   clueImages:
-  - {fileID: -2966200626249415253, guid: c5bb6a05f2d0c4e4483630d0de74ed27, type: 3}
-  - {fileID: -1540426309290004842, guid: d44c12c8646a71f478eb369f226fff8d, type: 3}
-  - {fileID: 8389134475083476877, guid: 7ba406d4a282e7d448b285dfad170e80, type: 3}
+  - {fileID: -6270953770400647376, guid: 0a861a2b5b5d5f949a080eb0ec7b6f67, type: 3}
+  - {fileID: 4349915267927364619, guid: fce7de4ae8c060a4fb668d539f668fcb, type: 3}
+  - {fileID: 7680820834086852892, guid: abfd4d9ffabd300409d3f6a462ecf555, type: 3}

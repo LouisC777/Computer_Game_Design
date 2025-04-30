@@ -2461,7 +2461,7 @@ MonoBehaviour:
   codePanelUI: {fileID: 1750713502}
   codeInput: {fileID: 1041227726}
   correctCode: 8492
-  nextSceneName: Level 1
+  nextSceneName: Level 1 (Ziyan)
   interactPrompt: {fileID: 0}
 --- !u!1 &741242021
 GameObject:

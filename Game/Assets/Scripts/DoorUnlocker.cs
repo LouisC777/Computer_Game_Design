@@ -1,17 +1,24 @@
 ﻿using UnityEngine;
-using TMPro; // 记得导入TextMeshPro命名空间
+using TMPro;
 
 public class DoorUnlocker : MonoBehaviour
 {
-    public GameObject doorInputPanel;
-    public TMP_InputField inputField;
-    public PuzzleManager puzzleManager;
+    [Header("UI 组件")]
+    public GameObject doorInputPanel;       // 输入密码面板
+    public TMP_InputField inputField;       // 输入框
+    public GameObject promptText;           // 提示文字，如“Press E to interact”
 
-    private bool playerInTrigger = false;
+    [Header("谜题逻辑")]
+    public PuzzleManager puzzleManager;     // 开门控制器
+    public string Ans1 = "Asia";   // 正确答案
+    public string Ans2 = "asia";   // 正确答案
+    public string Ans3 = "ASIA";   // 正确答案
+
+    private bool playerInRange = false;
 
     void Update()
     {
-        if (playerInTrigger && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             OpenInputPanel();
         }
@@ -19,42 +26,61 @@ public class DoorUnlocker : MonoBehaviour
 
     private void OpenInputPanel()
     {
-        doorInputPanel.SetActive(true);
-        inputField.text = "";
-        inputField.Select(); // 自动选中输入框
+        if (doorInputPanel != null)
+        {
+            doorInputPanel.SetActive(true);
+        }
+
+        if (inputField != null)
+        {
+            inputField.text = "";
+            inputField.Select();
+            inputField.ActivateInputField();
+        }
+
+        if (promptText != null)
+        {
+            promptText.SetActive(false);
+        }
     }
 
     public void SubmitInput()
     {
         string answer = inputField.text.Trim();
 
-        if (answer == "3.14")
+        if (answer == Ans1 || answer == Ans2 || answer == Ans3)
         {
-            Debug.Log("密码正确，开门！");
+            Debug.Log("✅ 密码正确，门已打开！");
             puzzleManager.OnPuzzleSolved();
             doorInputPanel.SetActive(false);
         }
         else
         {
-            Debug.Log("密码错误！");
+            Debug.Log("❌ 密码错误！");
             inputField.text = "";
+            inputField.Select();
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            playerInTrigger = true;
-            Debug.Log("靠近厕所门，按E输入密码");
+            playerInRange = true;
+
+            if (promptText != null)
+                promptText.SetActive(true);
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            playerInTrigger = false;
+            playerInRange = false;
+
+            if (promptText != null)
+                promptText.SetActive(false);
         }
     }
 }
