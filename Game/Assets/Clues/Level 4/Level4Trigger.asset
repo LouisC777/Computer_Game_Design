@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6f83242aef8284fab4bfa074f59f75, type: 3}
+  m_Name: Level4Trigger
+  m_EditorClassIdentifier: 
+  clueImages:
+  - {fileID: 21300000, guid: d573a1242b53c504b9d9d48b3e755cbb, type: 3}
+  - {fileID: 21300000, guid: d9833159a3263694b8a5ffc39133bfb5, type: 3}
+  - {fileID: 21300000, guid: 064b186b576ef3f4ca7fa79748f1ca65, type: 3}
