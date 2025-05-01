@@ -59,9 +59,25 @@ public class DrumPuzzleManager : MonoBehaviour
             audioSource.PlayOneShot(drumClips[index]);
             playerInput.Add(index);
 
+            // 实时检查输入是否还正确
+            for (int i = 0; i < playerInput.Count; i++)
+            {
+                if (playerInput[i] != correctSequence[i])
+                {
+                    // 一旦出错，立即反馈并清空输入
+                    Debug.Log("❌ 实时检测：错误演奏！");
+                    StartCoroutine(ShowFailHint());
+                    playerInput.Clear();
+                    return; // 不再继续检查
+                }
+            }
+
+            // 如果输入长度等于答案长度且全都正确
             if (playerInput.Count == correctSequence.Count)
             {
-                CheckAnswer();
+                Debug.Log("✅ 正确演奏！");
+                successPanel.SetActive(true);
+                puzzlePanel.SetActive(false);
             }
         }
     }

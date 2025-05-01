@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueImages:
   - {fileID: 21300000, guid: 3c797b5a5cc52974b84b7dcc907cd2e1, type: 3}
-  - {fileID: 21300000, guid: b1cc10947b6f72c48b8e58236a91906b, type: 3}
+  - {fileID: 21300000, guid: fa95030b4b65382429570202cbb4b3a3, type: 3}
   - {fileID: 21300000, guid: 9c37922831f9685469b330bf1a887c8d, type: 3}
