@@ -6576,7 +6576,7 @@ MonoBehaviour:
   codePanelUI: {fileID: 370109817}
   codeInput: {fileID: 1490678865}
   correctCode: 8492
-  nextSceneName: Level 1
+  nextSceneName: Level 3 (Louis)
   interactPrompt: {fileID: 0}
 --- !u!61 &1776800008
 BoxCollider2D:

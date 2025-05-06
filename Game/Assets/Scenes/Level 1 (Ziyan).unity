@@ -13144,7 +13144,7 @@ MonoBehaviour:
   codePanelUI: {fileID: 203455268}
   codeInput: {fileID: 175287390}
   correctCode: 2308
-  nextSceneName: Level 2 (Asumi)
+  nextSceneName: Main Menu
   interactPrompt: {fileID: 0}
 --- !u!61 &1879304218
 BoxCollider2D:
