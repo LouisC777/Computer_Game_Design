@@ -355,7 +355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e56474727061abb47a89705a15dc4014, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dac65dd3c77788a46b221394d13f5cfd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12193,6 +12193,7 @@ MonoBehaviour:
   codeInput: {fileID: 1685142550}
   correctCode: CEGC
   nextSceneName: Level 1
+  successPanel: {fileID: 41773057}
   interactPrompt: {fileID: 0}
 --- !u!61 &1424348942
 BoxCollider2D:
