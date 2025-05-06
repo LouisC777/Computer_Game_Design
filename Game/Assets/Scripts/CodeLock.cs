@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +9,7 @@ public class CodeLock : MonoBehaviour
     public TMP_InputField codeInput;      // TMP Input Field for code entry
     public string correctCode = "1234";   // Change this to your actual code
     public string nextSceneName;          // The name of the next scene
+    public GameObject successPanel;
 
     public GameObject interactPrompt;     // "Press E to interact" UI
     private bool playerInRange = false;   // Is the player near the door?
@@ -34,16 +35,19 @@ public class CodeLock : MonoBehaviour
         if (codeInput.text == correctCode)
         {
             Debug.Log("Correct Code!");
-            door.SetActive(false);         // "Unlock" the door
-            codePanelUI.SetActive(false);  // Hide the UI
-            Time.timeScale = 1f;           // Resume game
-            SceneManager.LoadScene(nextSceneName); // Load next level
+            door.SetActive(false);
+            codePanelUI.SetActive(false);
+            Time.timeScale = 1f;
+
+            if (successPanel != null)
+            {
+                successPanel.SetActive(true); // ✅ 显示成功面板
+            }
+
+            // 如果你想延迟跳转下一场景：
+            // StartCoroutine(LoadNextSceneAfterDelay(2f));
         }
-        else
-        {
-            Debug.Log("Wrong Code!");
-            codeInput.text = ""; // Clear input
-        }
+        
     }
 
     public void ClosePanel()
