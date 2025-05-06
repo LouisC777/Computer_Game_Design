@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Clue_1
   m_EditorClassIdentifier: 
   clueImages:
-  - {fileID: -1540426309290004842, guid: 6b016ce12840b4b439a5f0d2ff5286e9, type: 3}
-  - {fileID: 8389134475083476877, guid: 5b0a4aad9c6e4ae4c9faa8e6706dcd92, type: 3}
-  - {fileID: -6270953770400647376, guid: 02ad67e46f1ff304caa40a4d2577febb, type: 3}
+  - {fileID: -7960182935494766335, guid: c5624d7a6057d4007b8f5a9c297952a2, type: 3}
+  - {fileID: -2110634526391908488, guid: 29b69fdc42aa4426d8a85cc82a2e7100, type: 3}
+  - {fileID: -7213523919531809241, guid: e4741836e0c0846a79172183803ba6ec, type: 3}
