@@ -2281,7 +2281,7 @@ MonoBehaviour:
   clueIndex: 1
   clues:
   - {fileID: 0}
-  - {fileID: 11400000, guid: 71ec1cf03f49e21458191dc75df2445e, type: 2}
+  - {fileID: 11400000, guid: c8f095acc331840bdab6ec967f2a1929, type: 2}
   clueViewer: {fileID: 1222832221}
   clueManager: {fileID: 1620913106}
   cluePrompt: {fileID: 2039760939}
@@ -3221,7 +3221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueIndex: 0
   clues:
-  - {fileID: 11400000, guid: a7e52224f2d017948a6a2472eb5ce7b2, type: 2}
+  - {fileID: 11400000, guid: 6a1d63335e91f4ef6a6445e9e98af50b, type: 2}
   clueViewer: {fileID: 1222832221}
   clueManager: {fileID: 1620913106}
   cluePrompt: {fileID: 310877443}
@@ -4022,9 +4022,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueIndex: 3
   clues:
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
   clueViewer: {fileID: 1222832221}
   clueManager: {fileID: 1620913106}
@@ -5732,9 +5732,9 @@ MonoBehaviour:
   clueIndex: 4
   clues:
   - {fileID: 0}
-  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
-  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
-  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
   clueViewer: {fileID: 1222832221}
   clueManager: {fileID: 1620913106}
@@ -6510,6 +6510,7 @@ MonoBehaviour:
   codeInput: {fileID: 1490678865}
   correctCode: 6208
   nextSceneName: Level 3 (Louis)
+  successPanel: {fileID: 0}
   interactPrompt: {fileID: 0}
 --- !u!61 &1776800008
 BoxCollider2D:
