@@ -10,6 +10,7 @@ public class CodeLock : MonoBehaviour
     public string correctCode = "1234";   // Change this to your actual code
     public string nextSceneName;          // The name of the next scene
     public GameObject successPanel;
+    public GameObject failPanel;
 
     public GameObject interactPrompt;     // "Press E to interact" UI
     private bool playerInRange = false;   // Is the player near the door?
@@ -43,11 +44,17 @@ public class CodeLock : MonoBehaviour
             {
                 successPanel.SetActive(true); // ✅ 显示成功面板
             }
-
-            // 如果你想延迟跳转下一场景：
-            // StartCoroutine(LoadNextSceneAfterDelay(2f));
         }
-        
+        else
+        {
+            Debug.Log("Wrong Code!");
+            codeInput.text = ""; // 清空输入框
+            if (failPanel != null)
+            {
+                failPanel.SetActive(true); // 显示失败面板
+            }
+        }
+
     }
 
     public void ClosePanel()

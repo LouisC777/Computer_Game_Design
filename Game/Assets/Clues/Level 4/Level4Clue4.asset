@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Level4Clue4
   m_EditorClassIdentifier: 
   clueImages:
-  - {fileID: 21300000, guid: 1493f635b8e55de48a1388abb94ca8d2, type: 3}
+  - {fileID: 21300000, guid: ecbba2cf15e3828408228220436b26dd, type: 3}
