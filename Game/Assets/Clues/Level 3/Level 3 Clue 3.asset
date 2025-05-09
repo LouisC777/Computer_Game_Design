@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6f83242aef8284fab4bfa074f59f75, type: 3}
+  m_Name: Level 3 Clue 3
+  m_EditorClassIdentifier: 
+  clueImages:
+  - {fileID: 4164744761163438241, guid: f6370385271943b42927efad9fa385fb, type: 3}
+  - {fileID: -5750353039905602045, guid: 4b5b704dfb53ddd4a9abd019120a1c64, type: 3}
+  - {fileID: -7371509505491802261, guid: cda6176848b0511438b7dd4b2c31f4c4, type: 3}

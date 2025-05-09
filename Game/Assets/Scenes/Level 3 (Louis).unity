@@ -630,7 +630,7 @@ MonoBehaviour:
   door: {fileID: 37641310}
   codePanelUI: {fileID: 54667005}
   codeInput: {fileID: 1485330313}
-  correctCode: 1234
+  correctCode: 73410
   nextSceneName: Level 4 (Yonghui)
   successPanel: {fileID: 399078372}
   failPanel: {fileID: 1532742317}
@@ -849,7 +849,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.5, y: 3.49, z: 0}
-  m_LocalScale: {x: 1.52, y: 0.86, z: 2.51}
+  m_LocalScale: {x: 3.36, y: 0.86, z: 2.51}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 154567872}
@@ -872,7 +872,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
   - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
   - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
-  - {fileID: 11400000, guid: e3b84a1c00f1946468f7a75a12ac4d99, type: 2}
+  - {fileID: 11400000, guid: 7efbf6d09ed9c3843b212731f06602d9, type: 2}
   clueViewer: {fileID: 1052464287}
   clueManager: {fileID: 1459943775}
   cluePrompt: {fileID: 452957248}
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueIndex: 0
   clues:
-  - {fileID: 11400000, guid: a7e52224f2d017948a6a2472eb5ce7b2, type: 2}
+  - {fileID: 11400000, guid: 8e86da69eb2d96f4d8bed1cb98b8c0dc, type: 2}
   clueViewer: {fileID: 1052464287}
   clueManager: {fileID: 1459943775}
   cluePrompt: {fileID: 1388770993}
@@ -2315,7 +2315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &228615272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2778,7 +2778,7 @@ MonoBehaviour:
   clueIndex: 1
   clues:
   - {fileID: 0}
-  - {fileID: 11400000, guid: 71ec1cf03f49e21458191dc75df2445e, type: 2}
+  - {fileID: 11400000, guid: 01e034e32df9cdb4cb9c028548c9f575, type: 2}
   clueViewer: {fileID: 1052464287}
   clueManager: {fileID: 1459943775}
   cluePrompt: {fileID: 880622058}
@@ -3070,7 +3070,7 @@ Transform:
   m_GameObject: {fileID: 456906405}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.53, y: -4.03, z: 0}
+  m_LocalPosition: {x: -4.26, y: -4.03, z: 0}
   m_LocalScale: {x: 0.59542996, y: 0.59542996, z: 0.59542996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3090,10 +3090,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueIndex: 3
   clues:
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
-  - {fileID: 11400000, guid: b6575f2a913c371488c6de4dcc5aff68, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: e1335bb0401a49d4fb21dac30c8138eb, type: 2}
   clueViewer: {fileID: 1052464287}
   clueManager: {fileID: 1459943775}
   cluePrompt: {fileID: 6699905}
@@ -4985,8 +4985,8 @@ Transform:
   m_GameObject: {fileID: 852921173}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.48, y: 0.41, z: 0}
-  m_LocalScale: {x: 0.73, y: 0.97, z: 0.59542996}
+  m_LocalPosition: {x: -6.54, y: -0.63, z: 0}
+  m_LocalScale: {x: 0.73, y: 0.36, z: 0.59542996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 154567872}
@@ -5007,7 +5007,7 @@ MonoBehaviour:
   clues:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: abc15b2b36a5b0a47b07a94120401951, type: 2}
+  - {fileID: 11400000, guid: cdc3f389dd39f2842b33ebb6c14395e3, type: 2}
   clueViewer: {fileID: 1052464287}
   clueManager: {fileID: 1459943775}
   cluePrompt: {fileID: 115019716}
@@ -11107,7 +11107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.59, y: 435.9}
+  m_AnchoredPosition: {x: 390.34, y: 435.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1957236308
