@@ -5785,13 +5785,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 5b2a56e75bef8244aaa8387fae641194, type: 3}
   m_Resource: {fileID: 8300000, guid: 5b2a56e75bef8244aaa8387fae641194, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 183
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -8035,7 +8035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ec4c39fd70f034482673339065849c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 300
+  timeRemaining: 180
   timerIsRunning: 1
   timerText: {fileID: 1923698783}
   gameOverPanel: {fileID: 2095647557}
