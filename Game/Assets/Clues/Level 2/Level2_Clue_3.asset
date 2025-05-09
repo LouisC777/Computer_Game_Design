@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level2_Clue_3
   m_EditorClassIdentifier: 
   clueImages:
-  - {fileID: 2960402581040015946, guid: da5678da5bd04f7419683587c5e83b18, type: 3}
-  - {fileID: 7157561037332017152, guid: 1e8a90c60545aaa488f863103ababf7d, type: 3}
-  - {fileID: 4164744761163438241, guid: 8fb542429953c0145b2302398d16e09e, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

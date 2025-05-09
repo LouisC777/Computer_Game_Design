@@ -26,6 +26,7 @@ public class DrumPuzzleManager : MonoBehaviour
 
     public GameObject nextPanel;
     public AudioSource mysteryAudio;
+    public GameObject failPanel;
 
     void Start()
     {
@@ -111,9 +112,8 @@ public class DrumPuzzleManager : MonoBehaviour
     }
     IEnumerator ShowFailHint()
     {
-        failText.SetActive(true);
-        yield return new WaitForSecondsRealtime(2f); // 显示 2 秒
-        failText.SetActive(false);
+        failPanel.SetActive(true); // 显示失败面板
+        yield return null;         // 让它持续显示直到玩家关闭
     }
     public void CloseSuccessPanel()
     {
