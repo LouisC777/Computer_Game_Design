@@ -8919,7 +8919,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626450150}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -14952,8 +14952,8 @@ Transform:
   m_GameObject: {fileID: 1995604403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.42, y: 8.23, z: 0}
-  m_LocalScale: {x: 0.96, y: 0.96, z: 0.25}
+  m_LocalPosition: {x: -14.63, y: 8.1, z: 0}
+  m_LocalScale: {x: 1.49, y: 1.7, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346783200}
