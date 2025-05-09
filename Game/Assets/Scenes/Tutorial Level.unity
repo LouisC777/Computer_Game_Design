@@ -3063,14 +3063,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideImage: {fileID: 1575149509}
   slideSprites:
-  - {fileID: -855298285791758126, guid: 9bec682ba9a13284c95d9f4d6b7ddc7b, type: 3}
-  - {fileID: 6937817954938267909, guid: 988ac5ad731d8924da6e29ae4d2fd7dc, type: 3}
-  - {fileID: -6470460504253458178, guid: d21604404cd6b2b4390cc0cf3a283a9c, type: 3}
-  - {fileID: -4178046375966092550, guid: 2bfa203b7112fda46a3e06877e523e0e, type: 3}
-  - {fileID: 4130640169021434097, guid: 870a5e8c329cd924d8e89d1aa45f0a2d, type: 3}
-  - {fileID: 3465286685962602723, guid: a6d7086abe532704491d318a94e2a32a, type: 3}
-  - {fileID: 7028616704906629411, guid: d8e83331f23d61a449591a7cd429a131, type: 3}
-  - {fileID: 8288426215254106694, guid: f9dfbbfed74bf6241a45f35c7f51b57d, type: 3}
+  - {fileID: -855298285791758126, guid: 2e24fecba1a0d8745ad1591d97c4fa0c, type: 3}
+  - {fileID: 6937817954938267909, guid: 94ca7b63480c43f4b87bdf7ecd3281b8, type: 3}
+  - {fileID: -6470460504253458178, guid: b873d00856b81574dbb290c9a7f1eb5f, type: 3}
+  - {fileID: -4178046375966092550, guid: 23eddba2b69792742912daa79b07332f, type: 3}
+  - {fileID: 4130640169021434097, guid: 1b562e4325d62774b94a29e61f7d1bc2, type: 3}
+  - {fileID: 3465286685962602723, guid: 02111a439c41b1f42a9a1b3760a80253, type: 3}
+  - {fileID: 7028616704906629411, guid: 4aca285b9e629ce468adcb2a0ee85f5d, type: 3}
   nextButton: {fileID: 1364237057}
   sfxPlayer: {fileID: 0}
   slideSFX: {fileID: 0}
@@ -3533,7 +3532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &735809979
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4849,7 +4848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &844952155
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10478,7 +10477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1905902955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10508,12 +10507,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -10540,7 +10539,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 38
   m_TargetDisplay: 0
 --- !u!224 &1905902958
 RectTransform:
