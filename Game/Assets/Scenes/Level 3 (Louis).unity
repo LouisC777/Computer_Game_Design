@@ -848,8 +848,8 @@ Transform:
   m_GameObject: {fileID: 60507363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.75, y: 2.49, z: 0}
-  m_LocalScale: {x: 1.11, y: 0.86, z: 2.51}
+  m_LocalPosition: {x: 4.5, y: 3.49, z: 0}
+  m_LocalScale: {x: 1.52, y: 0.86, z: 2.51}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 154567872}
@@ -1245,10 +1245,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5b2a56e75bef8244aaa8387fae641194, type: 3}
-  m_Resource: {fileID: 8300000, guid: 5b2a56e75bef8244aaa8387fae641194, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 718d3e70e191d7e44bb7c4a75d05603c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 718d3e70e191d7e44bb7c4a75d05603c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CLUES FOUND:'
+  m_text: 'Hint:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4985,8 +4985,8 @@ Transform:
   m_GameObject: {fileID: 852921173}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.49, y: 0.07, z: 0}
-  m_LocalScale: {x: 0.73, y: 0.59, z: 0.59542996}
+  m_LocalPosition: {x: -6.48, y: 0.41, z: 0}
+  m_LocalScale: {x: 0.73, y: 0.97, z: 0.59542996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 154567872}
