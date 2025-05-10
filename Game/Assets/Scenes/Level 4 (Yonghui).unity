@@ -4397,19 +4397,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 331269423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ClueImageViewer, Assembly-CSharp
-        m_MethodName: NextImage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &331269423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5035,7 +5023,7 @@ Transform:
   m_GameObject: {fileID: 499990340}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.32, y: 6.72, z: 23.609058}
+  m_LocalPosition: {x: 5.32, y: 6.57, z: 23.609058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8407,7 +8395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f297b73edbc1bec4f8274c4f2ebcb7f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6bee82298a19484ebbb94c110bb6ac6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9331,7 +9319,7 @@ Transform:
   m_GameObject: {fileID: 976290346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.77, y: -3.69, z: 23.609058}
+  m_LocalPosition: {x: 4.77, y: -3.56, z: 23.609058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13412,7 +13400,7 @@ Transform:
   m_GameObject: {fileID: 1508394654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.38, y: -2.61, z: 23.609058}
+  m_LocalPosition: {x: 9.25, y: -2.61, z: 23.609058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15959,7 +15947,7 @@ Transform:
   m_GameObject: {fileID: 1806232561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: -2.61, z: 23.609058}
+  m_LocalPosition: {x: 0.4, y: -2.61, z: 23.609058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

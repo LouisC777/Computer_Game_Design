@@ -126,4 +126,12 @@ public class DrumPuzzleManager : MonoBehaviour
         if (mysteryAudio && !mysteryAudio.isPlaying)
             mysteryAudio.Play();
     }
+    public void StopMysteryAudio()
+    {
+        if (mysteryAudio && mysteryAudio.isPlaying)
+        {
+            mysteryAudio.Stop();
+        }
+    }
 }
+
