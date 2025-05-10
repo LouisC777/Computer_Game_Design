@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fbd03a5d1e78446f3a92760c27366245
+guid: 6dceb0d5d02d1ae4bab6b3924eb8710a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8203984382728597218
-    second: Guide 3_0
+      213: -4022854321372328569
+    second: Level 3 guide slide_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guide 3_0
+      name: Level 3 guide slide_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e111c94aba7952e80800000000000000
-      internalID: -8203984382728597218
+      spriteID: 78d05770f43fb28c0800000000000000
+      internalID: -4022854321372328569
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Guide 3_0: -8203984382728597218
+      Level 3 guide slide_0: -4022854321372328569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

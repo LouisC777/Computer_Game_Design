@@ -1042,7 +1042,7 @@ Transform:
   m_GameObject: {fileID: 180192115}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.48, y: 8.39, z: 0}
+  m_LocalPosition: {x: -5.63, y: 8.381, z: 0}
   m_LocalScale: {x: 0.73, y: 1.18, z: 0.73}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4894,8 +4894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cafd52326d58db41be3c1a73611b7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorInputPanel: {fileID: 0}
-  inputField: {fileID: 0}
+  doorInputPanel: {fileID: 912396062}
+  inputField: {fileID: 506876309}
   promptText: {fileID: 1078672121}
   puzzleManager: {fileID: 1134109022}
   Ans1: Asia
@@ -15111,7 +15111,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 835035055}
         m_TargetAssemblyTypeName: DoorUnlocker, Assembly-CSharp
         m_MethodName: SubmitInput
         m_Mode: 1
