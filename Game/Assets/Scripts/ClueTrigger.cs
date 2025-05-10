@@ -4,7 +4,7 @@ using TMPro;
 public class ClueTrigger : MonoBehaviour
 {
     public int clueIndex;
-    public ClueData[] clues; // Array of ClueData assets
+    public ClueData[] clues;
 
     public ClueImageViewer clueViewer;
     public ClueManager clueManager;
@@ -27,17 +27,21 @@ public class ClueTrigger : MonoBehaviour
     {
         if (playerInZone && Input.GetKeyDown(KeyCode.E))
         {
-            if (clueManager != null && clueManager.CanAccessClue(clueIndex))
-            {
-                if (clues != null && clueIndex < clues.Length && clues[clueIndex] != null && clues[clueIndex].clueImages.Length > 0)
-                {
-                    clueViewer.ShowClue(clues[clueIndex].clueImages);
-                }
-                else
-                {
-                    Debug.LogWarning("ClueData or Clue images are missing for clueIndex: " + clueIndex);
-                }
+            if (clueManager == null) return;
 
+            // ✅ 毎回スライドは見られる
+            if (clues != null && clueIndex < clues.Length && clues[clueIndex] != null && clues[clueIndex].clueImages.Length > 0)
+            {
+                clueViewer.ShowClue(clues[clueIndex].clueImages);
+            }
+            else
+            {
+                Debug.LogWarning("ClueData or Clue images are missing for clueIndex: " + clueIndex);
+            }
+
+            // ✅ パスワード表示は1回きり（まだUnlockされていない場合のみ）
+            if (!clueManager.IsClueUnlocked(clueIndex) && clueManager.IsClueNextToUnlock(clueIndex))
+            {
                 clueManager.UnlockClue(clueIndex);
 
                 if (cluePrompt != null)
@@ -48,11 +52,16 @@ public class ClueTrigger : MonoBehaviour
                 if (passwordDisplay != null)
                 {
                     passwordDisplay.text += passwordPiece;
+                    Debug.Log($"Password updated: {passwordDisplay.text}");
                 }
+            }
+            else if (clueManager.IsClueUnlocked(clueIndex))
+            {
+                Debug.Log("パスワードはすでに表示済み。スライドのみ再表示。");
             }
             else
             {
-                Debug.Log("You need to find the previous clue first.");
+                Debug.Log("前のClueを先に見つけてください。");
             }
         }
     }
