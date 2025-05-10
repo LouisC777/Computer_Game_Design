@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using TMPro;
 using System.Collections;
 
 public class RoomLightController : MonoBehaviour
 {
     public Light2D roomLight;
-    public float lightDuration = 10f;
-    public float cooldown = 10f;
+    public float lightDuration = 3f;  // 点灯時間
+    public float cooldown = 6f;       // クールダウン
+
+    public TextMeshProUGUI cooldownText; // UI表示用Text
 
     private bool canUseLight = true;
 
@@ -17,20 +20,27 @@ public class RoomLightController : MonoBehaviour
             roomLight.enabled = false;
             Debug.Log("RoomLight initially OFF");
         }
-        else
+
+        if (cooldownText != null)
         {
-            Debug.LogError("roomLight is not assigned!");
+            cooldownText.text = ""; // 最初は空白に
         }
     }
 
     void Update()
     {
-        Debug.Log("Update is running");
-
-        if (Input.GetKeyDown(KeyCode.L) && canUseLight)
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            Debug.Log("L key pressed — activating room light");
-            StartCoroutine(EnableRoomLight());
+            if (canUseLight)
+            {
+                Debug.Log("L key pressed — activating room light");
+                StartCoroutine(EnableRoomLight());
+            }
+            else
+            {
+                Debug.Log("クールダウン中だよ！");
+                ShowCooldownMessage();
+            }
         }
     }
 
@@ -57,5 +67,23 @@ public class RoomLightController : MonoBehaviour
 
         canUseLight = true;
         Debug.Log("ライト再使用可能になりました");
+    }
+
+    void ShowCooldownMessage()
+    {
+        if (cooldownText != null)
+        {
+            cooldownText.text = "Light cooling down... Try again in 5 seconds.";
+            CancelInvoke(nameof(HideCooldownMessage)); // 連打対策
+            Invoke(nameof(HideCooldownMessage), 2f);    // 2秒後に消す
+        }
+    }
+
+    void HideCooldownMessage()
+    {
+        if (cooldownText != null)
+        {
+            cooldownText.text = "";
+        }
     }
 }
