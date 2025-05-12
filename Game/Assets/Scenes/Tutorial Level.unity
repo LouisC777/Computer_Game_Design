@@ -2988,7 +2988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideImage: {fileID: 1575149509}
   slideSprites:
-  - {fileID: -855298285791758126, guid: 2e24fecba1a0d8745ad1591d97c4fa0c, type: 3}
+  - {fileID: 5678705141176567510, guid: c9e6868dab63d6743a10b4a0ac919594, type: 3}
   - {fileID: 6937817954938267909, guid: 94ca7b63480c43f4b87bdf7ecd3281b8, type: 3}
   - {fileID: -6470460504253458178, guid: b873d00856b81574dbb290c9a7f1eb5f, type: 3}
   - {fileID: -4178046375966092550, guid: 23eddba2b69792742912daa79b07332f, type: 3}

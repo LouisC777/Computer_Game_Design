@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0053079665a3e414f9d4adf714ca610e
+guid: c9e6868dab63d6743a10b4a0ac919594
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5594418577654662820
-    second: CLUEBOX Think. Solve. Escape._0
+      213: 5678705141176567510
+    second: TUTORIAL SLIDE 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CLUEBOX Think. Solve. Escape._0
+      name: TUTORIAL SLIDE 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1400
+        height: 900
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c593c02b1f1ac52b0800000000000000
-      internalID: -5594418577654662820
+      spriteID: 6d683042d30dece40800000000000000
+      internalID: 5678705141176567510
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      CLUEBOX Think. Solve. Escape._0: -5594418577654662820
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
